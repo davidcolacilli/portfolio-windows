@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- social icons from https://toyfight.co/ -->
+    <style>
+/*a, p, h1, h2, h3, h4, h5, body {
+    color: #333;
+    text-decoration: none;
+    margin: 0;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.2em;
+    font-weight: normal;
+}*/
+nav {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    display: inline-block;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    font-size: 1em;
+}
+.icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.28s cubic-bezier(0.62, 0.02, 0.34, 1);
+    -moz-transition: 0.28s cubic-bezier(0.62, 0.02, 0.34, 1);
+    transition: 0.28s cubic-bezier(0.62, 0.02, 0.34, 1);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+}
+.icon.icon-linkedin::after {
+    background: url(src/assets/icon-linkedin.svg) no-repeat center center/100%;
+}
+.icon.icon-behance::after {
+    background: url(src/assets/icon-behance.svg) no-repeat center center/100%;
+}
+.icon.icon-twitter::after {
+    background: url(src/assets/icon-twitter.svg) no-repeat center center/100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>David Colacilli</h1>
+        <p>UX Designer / UI Developer</p>
+		<nav>
+			<a target="_blank" class="icon icon-linkedin" href="https://www.linkedin.com/in/david-colacilli-2390854b/"></a>
+			<a target="_blank" class="icon icon-behance" href="https://www.behance.net/davidcolacilli"></a>
+			<a target="_blank" class="icon icon-twitter" href="https://twitter.com/davidcolacilli"></a>
+		</nav>
+    </header>
+    <article class="content">
+		<section>
+		  <h2>About me</h2>
+		  <p>Hi, I'm David. I'm a UX Designer and Web UI Developer at Endava.</p>
+		  <p>With a background in Graphic Design, I worked as a Frontend Web UI Developer from 2012 to 2018, diving back into the design world in 2019 as a User Experience Designer, until now.</p>
+		  <p>I have worked in several projects, designing complex internal tools and collaborating in the development of web applications based on HTML5, CSS3, and JavaScript.</p>
+		  <p>I also enjoy working in close communication with the clients, and helping with the task management of the team.</p>
+		</section>
+		<section>
+			<h2>Experience</h2>
+			<div>
+				<h3>DEVELOPER IN A PROJECT INVOLVING TEAM MANAGEMENT AND WEB UI DEVELOPMENT FOR VARIOUS APPLICATIONS AND WEBSITES (NOVEMBER 2015 – JULY 2017)</h3>
+				<p>	
+
+				The client is a pharmaceutical marketing agency, with 15+ years of pharma experience, a variety of integrated products and services, industry expertise and leadership, and a "start digital" philosophy. 
+
+				 
+
+				Team tasks (5 team members: team lead, developers): content updates, animations, static slides for web iOS applications. 
+
+				 
+
+				Tasks:  
+
+				Web UI development 
+
+				Direct communication with diverse Product Owners within the client’s company 
+
+				Coordination of multiple tasks amog the team 
+
+				Providing support to the Dev Team 
+
+				Technical interviews for new hires 
+
+				 
+
+				Technical Skills and Tools: HTML, CSS, jQuery, Javascript, Visual Studio, TFS, Adobe Photoshop, Sketch 
+				</p>
+			</div>
+		</section>
+		<section>
+		  <h2>Design</h2>
+			  Please take a look at my work in: <br>
+			- <a href="https://www.behance.net/davidcolacilli">Behance</a> <br> 
+			- <a href="https://davidcolacilli.github.io/vx/">Visual Experience</a>
+		</section>
+    </article>
+</body>
+</html>
